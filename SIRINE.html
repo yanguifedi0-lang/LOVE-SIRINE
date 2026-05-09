@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pour Sirine ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #0d0d0d;
+        overflow-x: hidden;
+        color: white;
+      }
+
+      /* BACKGROUND */
+
+      .bg {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -1;
+      }
+
+      .heart {
+        position: absolute;
+        color: #ff4d6d;
+        animation: float 10s linear infinite;
+        opacity: 0.6;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(100vh) scale(0);
+        }
+        100% {
+          transform: translateY(-10vh) scale(1.5);
+        }
+      }
+
+      /* HERO */
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(to bottom, #0d0d0d, #1a0010);
+      }
+
+      .hero h1 {
+        font-size: 4rem;
+        color: #ff4d6d;
+        margin-bottom: 15px;
+      }
+
+      .hero p {
+        max-width: 700px;
+        opacity: 0.8;
+        line-height: 1.8;
+        font-size: 1.1rem;
+      }
+
+      .btn {
+        margin-top: 35px;
+        padding: 15px 35px;
+        border: none;
+        border-radius: 40px;
+        background: #ff4d6d;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        transform: scale(1.08);
+        background: #ff2e57;
+      }
+
+      /* SECTION */
+
+      section {
+        padding: 90px 10%;
+      }
+
+      .card {
+        background: #171717;
+        border-radius: 25px;
+        padding: 35px;
+        margin-bottom: 35px;
+        box-shadow: 0 0 30px rgba(255, 77, 109, 0.12);
+      }
+
+      .card h2 {
+        color: #ff4d6d;
+        margin-bottom: 20px;
+        font-size: 2rem;
+      }
+
+      .card p {
+        line-height: 1.9;
+        opacity: 0.9;
+      }
+
+      /* COUNTER */
+
+      .counter {
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: #ff4d6d;
+        margin-top: 20px;
+      }
+
+      /* TIMELINE */
+
+      .timeline {
+        display: grid;
+        gap: 25px;
+      }
+
+      .timeline-box {
+        background: #222;
+        padding: 25px;
+        border-left: 4px solid #ff4d6d;
+        border-radius: 15px;
+      }
+
+      .timeline-box h3 {
+        margin-bottom: 10px;
+      }
+
+      /* MUSIC */
+
+      audio {
+        margin-top: 25px;
+        width: 280px;
+      }
+
+      /* FOOTER */
+
+      footer {
+        text-align: center;
+        padding: 40px;
+        opacity: 0.7;
+      }
+
+      /* MOBILE */
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.7rem;
+        }
+
+        .counter {
+          font-size: 1.7rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <div class="hero">
+      <h1>Sirine ❤️</h1>
+
+      <p>
+        Je ne sais pas comment expliquer ce que je ressens pour toi. Mais depuis
+        que tu es entrée dans ma vie, tout est devenu plus beau. Ton sourire
+        calme mon cœur, ta présence change mes journées, et ton nom reste dans
+        mes pensées chaque seconde.
+      </p>
+
+      <a href="#love" class="btn"> Lire La Suite ❤️ </a>
+
+      <audio controls autoplay loop>
+        <source src="music.mp3" type="audio/mp3" />
+      </audio>
+    </div>
+
+    <section id="love">
+      <div class="card">
+        <h2>💌 Une Lettre Pour Toi</h2>
+
+        <p>
+          Sirine… Peut-être que les mots ne suffisent pas pour montrer à quel
+          point tu comptes pour moi. Mais je veux que tu saches une chose : peu
+          importe les jours difficiles, peu importe la distance, peu importe le
+          temps… tu resteras toujours spéciale à mes yeux.
+          <br /><br />
+          Tu es cette personne qui arrive à rendre mon cœur heureux sans même
+          essayer. Et honnêtement… je n’ai jamais ressenti quelque chose d’aussi
+          fort.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>⏳ Depuis Combien De Temps ?</h2>
+
+        <div class="counter" id="counter"></div>
+      </div>
+
+      <div class="card">
+        <h2>❤️ Notre Histoire</h2>
+
+        <div class="timeline">
+          <div class="timeline-box">
+            <h3>💬 Le Premier Message</h3>
+            <p>Le moment où tout a commencé.</p>
+          </div>
+
+          <div class="timeline-box">
+            <h3>❤️ Le Premier Attachement</h3>
+            <p>Quand tu es devenue différente des autres.</p>
+          </div>
+
+          <div class="timeline-box">
+            <h3>♾️ Pour Toujours</h3>
+            <p>Et ce n’est que le début de notre histoire.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>Fait avec amour pour Sirine ❤️</footer>
+
+    <script>
+      /* FLOATING HEARTS */
+
+      const bg = document.querySelector(".bg");
+
+      function createHeart() {
+        const heart = document.createElement("div");
+
+        heart.classList.add("heart");
+
+        heart.innerHTML = "❤";
+
+        heart.style.left = Math.random() * 100 + "vw";
+
+        heart.style.fontSize = Math.random() * 25 + 10 + "px";
+
+        heart.style.animationDuration = Math.random() * 5 + 5 + "s";
+
+        bg.appendChild(heart);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 10000);
+      }
+
+      setInterval(createHeart, 300);
+
+      /* LOVE COUNTER */
+
+      const startDate = new Date("2024-01-01");
+
+      function updateCounter() {
+        const now = new Date();
+
+        const diff = now - startDate;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+
+        document.getElementById(
+          "counter"
+        ).innerHTML = `${days} jours ${hours} heures ${minutes} minutes ❤️`;
+      }
+
+      updateCounter();
+
+      setInterval(updateCounter, 60000);
+    </script>
+  </body>
+</html>
